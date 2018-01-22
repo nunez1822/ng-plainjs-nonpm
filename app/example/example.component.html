@@ -1,3 +1,20 @@
  {{myInput}} 
 
  <button (click)="emitOk();">Emit</button>
+
+ <button (click)="onClick();"></button>
+
+ <table class="table">
+    <thead>
+      <tr>
+        <th>Comments</th>
+        <th>Email</th>
+        <th>First Name</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="start">
+      <tr *ngFor="let n of table">
+        <td>{{n.comments}}</td>
+      </tr>
+    </tbody>
+  </table>
