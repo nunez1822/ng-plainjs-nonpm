@@ -30,7 +30,7 @@
 
   vm.onClick = function()
   {
-    console.log(this.table, this.example)
+    console.log(this.start)
   }
 
   vm.emitOk = function()
